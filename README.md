@@ -1,12 +1,14 @@
 # 汉传佛教（西舟寺）寺院导览图（TempV02）
 
+**中文** | [English](README.en.md)
+
 一个不依赖前端框架的交互式寺院导览网站。用户可在鸟瞰导览图上点击殿堂热点，西舟寺，目前主要包括钟楼、鼓楼、山门、天王殿、地藏殿、观音殿、大雄宝殿、华严三圣殿、西方三圣殿、五观堂、祖师堂、七级浮屠（燃灯塔）和通往后山的禅林小径，很多殿堂的内容还在设计建造中，进入对应的图文介绍页面；网站提供中文与英文版本，并为钟楼、鼓楼等地点提供可点击的音效热点。
 
 > **版本说明 / Version notice**  
 > 本仓库发布的是历史 **V02** 版本，仅用于开源展示、学习与维护。当前线上运行的是 **V03** 版本，请访问 [www.xizhoutemple.com](https://www.xizhoutemple.com)。  
 > This repository contains the historical **V02** release for open-source reference. The currently deployed website runs **V03** at [www.xizhoutemple.com](https://www.xizhoutemple.com).
 
-> TempV02 是当前项目的一个独立版本目录。本文档描述其现状与本地开发方式，尚未代表一个已经发布到 GitHub 的仓库。
+> TempV02 是西舟寺院导览项目的历史独立版本。本仓库保留其源码、双语内容、媒体资源和本地开发方式。
 
 ## 功能
 
