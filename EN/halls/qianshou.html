@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rear Hall of Mahavira Hall — Thousand-Armed and Thousand-Eyed Avalokitesvara Bodhisattva - Chinese Buddhist Monastery Hall Guide</title>
+  <meta name="description" content="Thousand-Armed and Thousand-Eyed Greatly Compassionate Avalokitesvara Bodhisattva" />
+  <link rel="canonical" href="../halls/qianshou.html" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="detailBody">
+  <header class="detailTopbar">
+    <a class="back" href="../index.html">Back to Guide Map of Han Buddhism Temple</a>
+    <span id="pageTitle">Rear Hall of Mahavira Hall — Thousand-Armed and Thousand-Eyed Avalokitesvara Bodhisattva</span>
+  </header>
+  <main class="detailPage">
+    <a class="imageCard imageCount1 imageCardLink" href="daxiong.html" aria-label="View related page for Rear Hall of Mahavira Hall — Thousand-Armed and Thousand-Eyed Avalokitesvara Bodhisattva">
+      <img class="hallPhoto" src="../images/qianshouguanyin.png" alt="Rear Hall of Mahavira Hall — Thousand-Armed and Thousand-Eyed Avalokitesvara Bodhisattva image 1" />
+    </a>
+    <article class="articleCard">
+      <p class="eyebrow">Temple Hall</p>
+      <div id="markdownContent" class="markdownBody" aria-live="polite">
+        <h1>Rear Hall of Mahavira Hall — Thousand-Armed and Thousand-Eyed Avalokitesvara Bodhisattva</h1>
+        <p class="summary">Loading Markdown content...</p>
+      </div>
+      <a class="mdLink" href="../content/qianshou.md">View Markdown source</a>
+    </article>
+  </main>
+
+  <script>
+    const markdownPath = '../content/qianshou.md';
+    const contentEl = document.querySelector('#markdownContent');
+    const pageTitleEl = document.querySelector('#pageTitle');
+    let lastMarkdown = '';
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#39;');
+    }
+
+    function inlineMarkdown(value) {
+      return escapeHtml(value)
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*(.+?)\*/g, '<em>$1</em>');
+    }
+
+    function renderMarkdown(markdown) {
+      const lines = markdown.replace(/\r\n?/g, '\n').split('\n');
+      let html = '';
+      let paragraph = [];
+      let listItems = [];
+
+      function flushParagraph() {
+        if (!paragraph.length) return;
+        html += '<p>' + paragraph.map((line) => '<span class="mdLine">' + inlineMarkdown(line) + '</span>').join('') + '</p>';
+        paragraph = [];
+      }
+
+      function flushList() {
+        if (!listItems.length) return;
+        html += '<ol>' + listItems.map((item) => '<li>' + inlineMarkdown(item) + '</li>').join('') + '</ol>';
+        listItems = [];
+      }
+
+      for (const rawLine of lines) {
+        const line = rawLine.trim();
+
+        if (!line) {
+          flushParagraph();
+          flushList();
+          continue;
+        }
+
+        const heading = line.match(/^(#{1,3})\s+(.+)$/);
+        if (heading) {
+          flushParagraph();
+          flushList();
+          const level = heading[1].length;
+          html += '<h' + level + '>' + inlineMarkdown(heading[2]) + '</h' + level + '>';
+          continue;
+        }
+
+        const orderedItem = line.match(/^\d+[.)]\s+(.+)$/);
+        if (orderedItem) {
+          flushParagraph();
+          listItems.push(orderedItem[1]);
+          continue;
+        }
+
+        flushList();
+        paragraph.push(line);
+      }
+
+      flushParagraph();
+      flushList();
+      return html;
+    }
+
+    function getFirstHeading(markdown) {
+      const match = markdown.match(/^#\s+(.+)$/m);
+      return match ? match[1].trim() : 'Rear Hall of Mahavira Hall — Thousand-Armed and Thousand-Eyed Avalokitesvara Bodhisattva';
+    }
+
+    async function loadMarkdown() {
+      try {
+        const response = await fetch(markdownPath + '?t=' + Date.now(), { cache: 'no-store' });
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        const markdown = await response.text();
+        if (markdown === lastMarkdown) return;
+        lastMarkdown = markdown;
+        const title = getFirstHeading(markdown);
+
+        contentEl.innerHTML = renderMarkdown(markdown);
+        pageTitleEl.textContent = title;
+        document.title = title + ' - Chinese Buddhist Monastery Hall Guide';
+      } catch (error) {
+        contentEl.innerHTML = '<h1>Rear Hall of Mahavira Hall — Thousand-Armed and Thousand-Eyed Avalokitesvara Bodhisattva</h1><p class="summary">Markdown content failed to load. Please open this page through the local server, for example http://localhost:3000/en/halls/qianshou.html.</p>';
+        console.error('Failed to load Markdown:', error);
+      }
+    }
+
+    loadMarkdown();
+    setInterval(loadMarkdown, 2000);
+  </script>
+</body>
+</html>

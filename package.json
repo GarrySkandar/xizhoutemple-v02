@@ -1,0 +1,7 @@
+{
+  "name": "tempv02",
+  "private": true,
+  "scripts": {
+    "build": "node build-locales.js && node build-sites.js"
+  }
+}

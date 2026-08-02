@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chinese Buddhist Monastery Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="homeHeader">
+    <span class="homeBrand">Guide Map of Han Buddhism Temple</span>
+    <nav class="languageSwitch" aria-label="Language selection">
+      <a href="/zh/">Chinese</a>
+      <a class="active" href="/en/" aria-current="page">English</a>
+    </nav>
+  </header>
+  <main class="page">
+    <section class="viewer" aria-label="Monastery guide map">
+      <div class="map" id="map">
+        <img id="templeImage" src="assets/temple-clean.png" alt="Overhead guide map of a Chinese Buddhist monastery" />
+        <div id="hotspots"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>观音殿 - 汉传佛教寺院殿堂介绍</title>
+  <meta name="description" content="观音殿是供奉观世音菩萨的殿堂。" />
+  <link rel="canonical" href="../halls/guanyin.html" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="detailBody">
+  <header class="detailTopbar">
+    <a class="back" href="../index.html">返回寺院导览图</a>
+    <span id="pageTitle">观音殿</span>
+  </header>
+  <main class="detailPage">
+    <section class="imageCard imageCount1">
+      <img class="hallPhoto" src="../images/guanyin.png" alt="观音殿示意图1" />
+    </section>
+    <article class="articleCard">
+      <p class="eyebrow">Temple Hall</p>
+      <div id="markdownContent" class="markdownBody" aria-live="polite">
+        <h1>观音殿</h1>
+        <p class="summary">正在读取 Markdown 内容...</p>
+      </div>
+      <a class="mdLink" href="../content/guanyin.md">查看 Markdown 原文</a>
+    </article>
+  </main>
+
+  <script>
+    const markdownPath = '../content/guanyin.md';
+    const contentEl = document.querySelector('#markdownContent');
+    const pageTitleEl = document.querySelector('#pageTitle');
+    let lastMarkdown = '';
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#39;');
+    }
+
+    function inlineMarkdown(value) {
+      return escapeHtml(value)
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*(.+?)\*/g, '<em>$1</em>');
+    }
+
+    function renderMarkdown(markdown) {
+      const lines = markdown.replace(/\r\n?/g, '\n').split('\n');
+      let html = '';
+      let paragraph = [];
+      let listItems = [];
+
+      function flushParagraph() {
+        if (!paragraph.length) return;
+        html += '<p>' + paragraph.map((line) => '<span class="mdLine">' + inlineMarkdown(line) + '</span>').join('') + '</p>';
+        paragraph = [];
+      }
+
+      function flushList() {
+        if (!listItems.length) return;
+        html += '<ol>' + listItems.map((item) => '<li>' + inlineMarkdown(item) + '</li>').join('') + '</ol>';
+        listItems = [];
+      }
+
+      for (const rawLine of lines) {
+        const line = rawLine.trim();
+
+        if (!line) {
+          flushParagraph();
+          flushList();
+          continue;
+        }
+
+        const heading = line.match(/^(#{1,3})\s+(.+)$/);
+        if (heading) {
+          flushParagraph();
+          flushList();
+          const level = heading[1].length;
+          html += '<h' + level + '>' + inlineMarkdown(heading[2]) + '</h' + level + '>';
+          continue;
+        }
+
+        const orderedItem = line.match(/^\d+[.)]\s+(.+)$/);
+        if (orderedItem) {
+          flushParagraph();
+          listItems.push(orderedItem[1]);
+          continue;
+        }
+
+        flushList();
+        paragraph.push(line);
+      }
+
+      flushParagraph();
+      flushList();
+      return html;
+    }
+
+    function getFirstHeading(markdown) {
+      const match = markdown.match(/^#\s+(.+)$/m);
+      return match ? match[1].trim() : '观音殿';
+    }
+
+    async function loadMarkdown() {
+      try {
+        const response = await fetch(markdownPath + '?t=' + Date.now(), { cache: 'no-store' });
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        const markdown = await response.text();
+        if (markdown === lastMarkdown) return;
+        lastMarkdown = markdown;
+        const title = getFirstHeading(markdown);
+
+        contentEl.innerHTML = renderMarkdown(markdown);
+        pageTitleEl.textContent = title;
+        document.title = title + ' - 汉传佛教寺院殿堂介绍';
+      } catch (error) {
+        contentEl.innerHTML = '<h1>观音殿</h1><p class="summary">Markdown 内容读取失败。请通过本地服务器访问本页面，例如 http://localhost:8000/halls/guanyin.html。</p>';
+        console.error('Failed to load Markdown:', error);
+      }
+    }
+
+    loadMarkdown();
+    setInterval(loadMarkdown, 2000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+# Kṣitigarbha Hall
+
+Kṣitigarbha Bodhisattva is known for his “great vows.” In Chinese Buddhism, he is closely connected with filial piety, rescuing beings from suffering, and rites for the deceased. Kṣitigarbha Hall often reminds the public to make vows, practice filial piety, and cultivate goodness.
+
+The first hall that truly enters the substance of Buddhist cultivation must be Kṣitigarbha Hall.
+Kṣitigarbha Bodhisattva represents the foundation of Mahayana Buddhism: Kṣitigarbha Hall represents the “standing ground of cultivation.” The Buddhadharma is like a skyscraper, and Kṣitigarbha Hall is the foundation. Without a foundation, later halls such as Guanyin Hall, representing compassion, Mañjuśrī Hall, representing wisdom, and Samantabhadra Hall, representing practice, become castles in the air.
+The rule for establishing a monastery: when a monastery is founded, the first sutra that should be taught is the Sutra of the Fundamental Vows of Kṣitigarbha Bodhisattva. After the foundation is firmly laid, people can then be guided into the Infinite Life Sutra and Buddha-recitation for rebirth in the Pure Land.
+
+## Statue Introduction
+**Seated image of Kṣitigarbha Bodhisattva:** Wearing the Five-Buddha Vairocana crown, draped in a kāṣāya robe, seated cross-legged on a lotus platform; in the right hand holding a nine-ringed staff to open the gates of hell; in the left hand holding a maṇi jewel to illuminate the darkness of the underworld and break through ignorance and karmic offenses.
+**Monk Daoming, left side, young bhikṣu:** The son of Min Gong, he was the first to take refuge in Kṣitigarbha, shave his head and become a monk, and first realize the path.
+**Elder Min Gong, right side, elderly gentleman-official figure:** A local gentry figure of Jiuhua Mountain. He once donated an entire mountain forest for Kṣitigarbha’s practice, and later gave up his family estate to follow him and become a monk. Before the Buddhadharma, age and seniority are not decisive; he took his own son Daoming as teacher. Folk tradition often uses this to show that cultivation is not divided by old or young; awakening comes first.
+**Mount Diting, also called Good Listener or Hell-Ear:** The dedicated mount of Kṣitigarbha Bodhisattva in Chinese Buddhism. Enshrined beneath Kṣitigarbha Bodhisattva’s lotus platform, it is one of the four great bodhisattva mounts together with Mañjuśrī’s blue lion, Samantabhadra’s white elephant, and Guanyin’s golden-haired hou. It is an iconic auspicious beast of Kṣitigarbha Hall.
+
+## The True Teaching Meaning of the Two Characters “Kṣitigarbha”: Symbolism
+“Earth” is a metaphor for the mind-ground; “treasury” is a metaphor for hidden treasure.
+**Mind-ground: **The earth can produce and carry all things, and it is equal and selfless. Good people step on the earth, and bad people also step on the earth; the earth makes no discrimination. The master taught that when we see Kṣitigarbha Bodhisattva standing upon the earth, we should turn the light inward: our mind-ground should also be like the earth, equal and inclusive, able to shoulder and support all beings.
+**Treasury: **Within our self-nature and true mind is contained boundless wisdom, virtue, ability, and talent, richer by countless times than all gold and silver mines on earth. The true purpose of Kṣitigarbha Hall is to teach us how to develop the treasure of our own mind-ground.
+
+## The Core of Kṣitigarbha Bodhisattva: Filial Piety and Respect for Teachers
+Since Kṣitigarbha Hall is the key to developing the treasury of self-nature, what tool opens it? Master Chin Kung pointed out that the core of Kṣitigarbha Hall is to display “filial piety” and “respect for teachers.” The Kṣitigarbha Sutra is the Buddhist scripture of filial piety.
+Filial piety toward parents and respect for teachers: In the causal stage, meaning in past lives, Kṣitigarbha Bodhisattva repeatedly manifested as the Brahmin Maiden and the Bright-Eyed Maiden, making great vows in order to rescue his mother. The master emphasized that without filial piety toward parents and respect for teachers, one cannot even enter the gate of Mahayana Buddhism. Enshrining Kṣitigarbha Bodhisattva in Kṣitigarbha Hall constantly reminds us to put “supporting parents and serving teachers” into practice in every thought and intention.
+
+## Lord of the Netherworld
+Folk belief often regards Kṣitigarbha Hall as a “dark place” that manages the dead, ghosts, and the underworld, and some people are even afraid to visit it. But what is hell? The “hell” in “until hell is empty” does not only refer to a place of suffering underground. It also refers to the severe delusion, inversion, and deep greed, anger, delusion, and arrogance of beings. As long as greed, anger, and delusion remain in your mind, you are in hell.
+“If I do not enter hell, who will?” Kṣitigarbha Bodhisattva goes to the most painful places to liberate beings, expressing the foremost great vow. The master said that we should learn from Kṣitigarbha Bodhisattva’s resolve. In this suffering world, we should use a true mind and pure mind to help the most confused and suffering beings break through delusion, awaken to truth, leave suffering, and attain joy.
