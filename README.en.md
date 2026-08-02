@@ -1,8 +1,8 @@
-# Chinese Buddhist Monastery Guide (TempV02)
+# Chinese Buddhist Xizhou Temple Guide (TempV02)
 
 [中文](README.md) | **English**
 
-A framework-free interactive monastery guide. Visitors can select hotspots on an aerial monastery map, open illustrated hall pages, and explore localized Chinese and English content. The Bell Tower and Drum Tower pages also include interactive audio hotspots.
+A framework-free interactive guide to Xizhou Temple. Visitors can select hotspots on the aerial monastery map and open illustrated pages for the Bell Tower, Drum Tower, Mountain Gate, Hall of Heavenly Kings, Ksitigarbha Hall, Guanyin Hall, Mahavira Hall, Huayan Three Sages Hall, Western Three Sages Hall, Five Contemplations Hall, Patriarchs' Hall, Seven-Tier Stupa (Lamp-Lighting Pagoda), and the Chan forest path leading to the rear mountain. Content for many halls is still being designed and developed. The website provides Chinese and English versions, while the Bell Tower and Drum Tower also include interactive audio hotspots.
 
 > **Version notice**  
 > This repository contains the historical **V02** release for open-source reference, learning, and maintenance. The currently deployed website runs **V03** at [www.xizhoutemple.com](https://www.xizhoutemple.com).
